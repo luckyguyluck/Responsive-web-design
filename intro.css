@@ -1,0 +1,263 @@
+#intro-section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    background-color: #8bafb0;
+    overflow-y: hidden;
+}
+
+#background-albums{
+    width: 900px;
+    margin: auto;
+}
+
+#background-albums img{
+    width: 150px;
+    height: 150px;
+    filter:opacity(0.9);
+    border-radius: 30px 10px;
+    position: relative;
+    animation: moving-imgs 2s linear ;
+}
+
+#intro-edsheeran{
+    top: 40px;
+    left: 90px;
+}
+
+
+#intro-beerbongs{
+    top: 70px;
+    left: 150px;
+}
+
+#intro-marshmellow{
+    top: 270px;
+    right: 300px;
+}
+
+#intro-eminem{
+    top: 300px;
+    right: 200px;
+}
+
+#intro-aw{
+    top: 15px;
+    right: 100px;
+}
+
+
+#intro-stoney{
+    left: 700px;
+}
+
+#intro-jb{
+    left: 340px;
+    top: 240px;
+}
+
+#intro-fatrat{
+    left: 450px;
+    top: 210px;
+}
+
+@keyframes moving-imgs {
+    0%{
+        transform: translateY(-600px);
+    }
+
+    90%{
+        transform: translateY(30px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+#intro-text{
+    align-self: center;
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    background-color: rgba(221, 221, 221, 0.85);
+    box-shadow: 2px -4px 38px 5px rgba(5,5,5,0.24) inset;
+    width: 50%;
+    height: 250px;
+    left: 20%;
+    top: 15%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2% 5%;
+    font-family: "Truculenta", sans-serif;
+    transition: 0.5s;
+    /* text-shadow: 0px 0px 0 rgb(180,180,180),
+                 -1px 1px 0 rgb(152,152,152),
+                 -2px 2px 0 rgb(124,124,124),
+                 -3px 3px 0 rgb(96,96,96),
+                 -4px 4px 0 rgb(68,68,68),
+                 -5px 5px  0 rgb(40,40,40),
+                 -6px 6px 5px rgba(0,0,0,0.4),
+                 -6px 6px 1px rgba(0,0,0,0.5),
+                 0px 0px 5px rgba(0,0,0,.2); */
+
+}
+
+#intro-text h3{
+    margin-top: 5%;
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#intro-text h1{
+    margin-top: 6%;
+    color: black;
+    font-weight: 500;
+}
+
+#intro-text button{
+    margin-bottom: 7%;
+    font-weight: 900;
+    font-size: 16px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    border-radius: 13px;
+    transition : 368ms;
+    transform: translateY(0);
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Prata;
+}
+
+#intro-text button i{
+    margin-left: 10px;
+}
+
+#intro-text button:hover{
+
+    padding: 10px 60px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #d62828;
+    border: none;
+    transition : 368ms;
+}
+
+@media (max-width: 950px){
+    #background-albums{
+        width: 750px;
+    }
+
+    #intro-edsheeran{
+        left: 30px;
+    }
+
+    #intro-marshmellow{
+        top: 250px;
+    }
+
+    #intro-aw{
+        right: 0;
+        left: 150px;
+    }
+
+    #intro-stoney{
+        left: 450px;
+    }
+
+    #intro-jb{
+        left: 200px;
+        top: -150px;
+    }
+
+    #intro-fatrat{
+        left: 0;
+        top: 100px;
+    }
+
+    #intro-text{
+        height: 200px;
+    }
+
+    #intro-text h1{
+        font-size: 1.5rem;
+    }
+
+    #intro-text h3{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 750px){
+
+    #intro-section{
+        height: 80vh;   
+    }
+
+    #background-albums{
+        display: none;
+    }
+
+    #intro-text{
+        height: 180px;
+    }
+
+    #inro-text button{
+        margin-bottom: 0;
+    }
+
+    #intro-text h1{
+        font-size: 1rem;
+    }
+
+    #intro-text h3{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 590px){
+    #intro-section{
+        top: 50px;
+    }
+}
+
+@media (max-width: 490px){
+    #intro-text{
+        height: 130px;  
+    }
+
+    #intro-text h1{
+        font-size: 0.8rem;
+    }
+
+    #intro-text h3{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 390px){
+    #intro-section{
+        height: 50vh;
+    }
+
+    #intro-text{
+        width: 70%;
+        left: 10%;
+    }
+
+    #intro-text button {
+        margin-top: 10px;
+        padding: 5px 15px;
+        font-size: 0.8rem;
+    }
+
+    #intro-text button:hover{
+        padding: 5px 20px;
+    }
+}
